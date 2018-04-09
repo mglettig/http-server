@@ -154,7 +154,7 @@ static struct mg_str upload_fname(struct mg_connection *nc,
 
 static void upload_handler(struct mg_connection *c, int ev, void *p,
                            void *user_data) {
-  mg_file_upload_handler(c, ev, p, upload_fname, user_data);
+  mg_file_upload_handler(c, ev, p, upload_fname, user_data, false);
 }
 #endif
 
